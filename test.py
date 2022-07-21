@@ -34,7 +34,7 @@ def check():
     # if num1.isdigit():
     try:
 
-        x=int(num1)
+        x=int(i)
         if x > 0:
             # x=int(xb)
             z=time_try(x)   
@@ -46,10 +46,11 @@ def check():
     except ValueError:
         print ("dont blow up my code")
   
-num2= ""
-while num2 != 5:
-    num1=input("enter the no of days: \n")
-    num2=int(num1)
+# num1= ""
+# while num1 != "exit" :
+num1=input("enter the no of days: \n")
+print(num1.split(", "))
+for i in  num1.split(", "):
     check()
 
 
