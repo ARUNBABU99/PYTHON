@@ -31,21 +31,26 @@ def time_try(days):
 
 def check():
     # x=input("enter the no of days: \n")
-    if num1.isdigit():
+    # if num1.isdigit():
+    try:
+
         x=int(num1)
         if x > 0:
             # x=int(xb)
             z=time_try(x)   
             print(z)
-        elif x == 0:
+        elif x == 0: 
             print ("yu enetered 0")
         elif x  < 0:
             print ("enter +ve val")
-    else:
-        print("enter a number")
-
-num1=input("enter the no of days: \n")
-check()
+    except ValueError:
+        print ("dont blow up my code")
+  
+num2= ""
+while num2 != 5:
+    num1=input("enter the no of days: \n")
+    num2=int(num1)
+    check()
 
 
 
