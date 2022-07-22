@@ -22,6 +22,7 @@
 from datetime import datetime
 user=input("enter your goal: deadline seperated by comma \n")
 input=user.split(":")
+goal=input[0]
 deadline=input[1]
 datetime_object = datetime.strptime(deadline, "%d/%m/%Y")
 
@@ -33,4 +34,4 @@ current=datetime.today()
 
 d=datetime_object-current
 print (d)
-print(f"dear bro you have {d} seconds left")
+print(f"dear bro you have {d} seconds left please prepare for {goal}")
